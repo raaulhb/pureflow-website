@@ -3,6 +3,7 @@ import { HeroSection } from "./components/sections/HeroSection";
 import { AboutSection } from "./components/sections/AboutSection";
 import { ServicesSection } from "./components/sections/ServicesSection";
 import { PortfolioSection } from "./components/sections/PortfolioSection";
+import { QuoteSection } from "./components/sections/QuoteSection";
 import "./index.css";
 
 function App() {
@@ -21,6 +22,9 @@ function App() {
 
       {/* Portfolio Section */}
       <PortfolioSection />
+
+      {/* Quote Section */}
+      <QuoteSection />
 
       {/* Conteúdo temporário para testar navegação */}
       <main>
