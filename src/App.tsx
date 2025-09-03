@@ -1,5 +1,6 @@
 import { Header } from "./components/layout/Header";
 import { HeroSection } from "./components/sections/HeroSection";
+import { AboutSection } from "./components/sections/AboutSection";
 import "./index.css";
 
 function App() {
@@ -9,6 +10,9 @@ function App() {
 
       {/* Hero Section */}
       <HeroSection />
+
+      {/* About Section */}
+      <AboutSection />
 
       {/* Conteúdo temporário para testar navegação */}
       <main>
