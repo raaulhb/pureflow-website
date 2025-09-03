@@ -4,6 +4,7 @@ import { AboutSection } from "./components/sections/AboutSection";
 import { ServicesSection } from "./components/sections/ServicesSection";
 import { PortfolioSection } from "./components/sections/PortfolioSection";
 import { QuoteSection } from "./components/sections/QuoteSection";
+import { FAQSection } from "./components/sections/FAQSection";
 import "./index.css";
 
 function App() {
@@ -25,6 +26,9 @@ function App() {
 
       {/* Quote Section */}
       <QuoteSection />
+
+      {/* FAQ Section */}
+      <FAQSection />
 
       {/* Conteúdo temporário para testar navegação */}
       <main>
