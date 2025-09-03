@@ -1,17 +1,68 @@
+import { Header } from "./components/layout/Header";
 import "./index.css";
 
 function App() {
   return (
     <div className="min-h-screen bg-gray-50">
-      <div className="container mx-auto px-4 py-8">
-        <h1 className="text-4xl font-bold text-primary-500 mb-4">PUREFLOW</h1>
-        <p className="text-gray-600 text-lg mb-6">
-          We handle the load, you handle the glow
-        </p>
-        <button className="bg-primary-500 text-white px-6 py-3 rounded-lg hover:bg-primary-600 transition-colors">
-          Teste Tailwind
-        </button>
-      </div>
+      <Header />
+
+      {/* Conteúdo temporário para testar o header */}
+      <main className="pt-20">
+        {/* Seções temporárias para testar scroll spy */}
+        <section
+          id="empresa"
+          className="min-h-screen bg-white flex items-center justify-center"
+        >
+          <div className="text-center">
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">EMPRESA</h1>
+            <p className="text-xl text-gray-600">Sobre a PURIFLOW</p>
+          </div>
+        </section>
+
+        <section
+          id="servicos"
+          className="min-h-screen bg-gray-100 flex items-center justify-center"
+        >
+          <div className="text-center">
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">SERVIÇOS</h1>
+            <p className="text-xl text-gray-600">
+              Limpeza especializada industrial
+            </p>
+          </div>
+        </section>
+
+        <section
+          id="orcamento"
+          className="min-h-screen bg-white flex items-center justify-center"
+        >
+          <div className="text-center">
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">ORÇAMENTO</h1>
+            <p className="text-xl text-gray-600">
+              Solicite seu orçamento gratuito
+            </p>
+          </div>
+        </section>
+
+        <section
+          id="duvidas"
+          className="min-h-screen bg-gray-100 flex items-center justify-center"
+        >
+          <div className="text-center">
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">DÚVIDAS</h1>
+            <p className="text-xl text-gray-600">Perguntas frequentes</p>
+          </div>
+        </section>
+
+        <section
+          id="contatos"
+          className="min-h-screen bg-white flex items-center justify-center"
+        >
+          <div className="text-center">
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">CONTATOS</h1>
+            <p className="text-xl text-gray-600">Entre em contato conosco</p>
+          </div>
+        </section>
+      </main>
     </div>
   );
 }
