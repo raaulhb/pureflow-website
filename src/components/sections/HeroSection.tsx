@@ -33,7 +33,7 @@ export function HeroSection() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center overflow-hidden mt-16 lg:mt-20">
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-blue-50">
         <div
@@ -76,19 +76,8 @@ export function HeroSection() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            {/* Badge */}
-            <motion.div
-              className="inline-flex items-center space-x-2 bg-primary-50 text-primary-700 px-4 py-2 rounded-full text-sm font-medium border border-primary-200"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-            >
-              <Star className="w-4 h-4 fill-current" />
-              <span>Especialistas em Limpeza Industrial</span>
-            </motion.div>
-
             {/* Main Headlines */}
-            <div className="space-y-4">
+            <div className="space-y-4 mt-4">
               <motion.h1
                 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight"
                 initial={{ opacity: 0, y: 30 }}
@@ -196,7 +185,7 @@ export function HeroSection() {
               {/* Content */}
               <div className="relative z-10 space-y-6">
                 {/* Icon */}
-                <div className="w-16 h-16 bg-gradient-to-br from-primary-500 to-secondary-500 rounded-2xl flex items-center justify-center mb-6">
+                {/* <div className="w-16 h-16 bg-gradient-to-br from-primary-500 to-secondary-500 rounded-2xl flex items-center justify-center mb-6">
                   <motion.div
                     animate={{ rotate: [0, 360] }}
                     transition={{
@@ -206,6 +195,24 @@ export function HeroSection() {
                     }}
                   >
                     <Zap className="w-8 h-8 text-white" />
+                  </motion.div>
+                </div> */}
+                {/* Photo */}
+                <div className="w-48 h-48 bg-gradient-to-br from-primary-500 to-secondary-500 rounded-2xl p-0.5 mb-6">
+                  <motion.div
+                    className="w-full h-full rounded-xl overflow-hidden"
+                    transition={{
+                      duration: 8,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                    }}
+                  >
+                    <img
+                      src="/images/slides/gustavo2.png"
+                      alt="Gustavo Costa - Fundador PURIFLOW"
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
                   </motion.div>
                 </div>
 
@@ -236,6 +243,8 @@ export function HeroSection() {
                 </div>
               </div>
             </div>
+
+            {/* Floating Stats Cards */}
 
             <div className="absolute -right-8 bottom-1/4">
               <motion.div
