@@ -1,4 +1,5 @@
 import { Header } from "./components/layout/Header";
+import { HeroSection } from "./components/sections/HeroSection";
 import "./index.css";
 
 function App() {
@@ -6,8 +7,11 @@ function App() {
     <div className="min-h-screen bg-gray-50">
       <Header />
 
-      {/* Conteúdo temporário para testar o header */}
-      <main className="pt-20">
+      {/* Hero Section */}
+      <HeroSection />
+
+      {/* Conteúdo temporário para testar navegação */}
+      <main>
         {/* Seções temporárias para testar scroll spy */}
         <section
           id="empresa"
