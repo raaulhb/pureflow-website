@@ -2,6 +2,7 @@ import { Header } from "./components/layout/Header";
 import { HeroSection } from "./components/sections/HeroSection";
 import { AboutSection } from "./components/sections/AboutSection";
 import { ServicesSection } from "./components/sections/ServicesSection";
+import { PortfolioSection } from "./components/sections/PortfolioSection";
 import "./index.css";
 
 function App() {
@@ -17,6 +18,9 @@ function App() {
 
       {/* Services Section */}
       <ServicesSection />
+
+      {/* Portfolio Section */}
+      <PortfolioSection />
 
       {/* Conteúdo temporário para testar navegação */}
       <main>
