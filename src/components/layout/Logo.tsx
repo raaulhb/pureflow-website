@@ -68,7 +68,7 @@ export function Logo({ className, size = "md" }: LogoProps) {
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.2 }}
         >
-          PUREFLOW
+          PURIFLOW
         </motion.h1>
         <motion.p
           className={cn(

@@ -425,7 +425,7 @@ const process = [
     step: "01",
     title: "Avaliação Técnica",
     description:
-      "Análise completa dos equipamentos e identificação das necessidades de limpeza.",
+      "Análise dos equipamentos e identificação das necessidades de limpeza.",
     icon: Wrench,
   },
   {
@@ -654,7 +654,7 @@ export function AboutSection() {
               {/* Content */}
               <div className="relative z-10">
                 <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">
-                  Nossos Trabalhos em Ação
+                  Nossos Trabalhos
                 </h3>
                 <ImageSlider
                   images={portfolioImages}
