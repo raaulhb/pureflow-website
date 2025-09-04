@@ -1,13 +1,6 @@
 User-agent: *
 Allow: /
 
-# Permitir indexação de todas as páginas principais
-Allow: /empresa
-Allow: /servicos
-Allow: /orcamento
-Allow: /duvidas
-Allow: /contatos
-
 # Bloquear arquivos desnecessários
 Disallow: /node_modules/
 Disallow: /src/
@@ -24,6 +17,3 @@ Allow: /
 
 User-agent: Bingbot
 Allow: /
-
-# Crawl-delay para não sobrecarregar servidor
-Crawl-delay: 1
