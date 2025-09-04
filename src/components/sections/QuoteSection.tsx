@@ -86,7 +86,7 @@ const benefits = [
   },
   {
     icon: Award,
-    title: "15+ Anos de Experiência",
+    title: "5+ Anos de Experiência",
     description: "Expertise comprovada",
   },
 ];

@@ -12,7 +12,7 @@ import { cn } from "@/lib/utils";
 
 const stats = [
   { icon: Users, value: "500+", label: "Clientes Satisfeitos" },
-  { icon: Award, value: "15+", label: "Anos de Experiência" },
+  { icon: Award, value: "5+", label: "Anos de Experiência" },
   { icon: CheckCircle, value: "100%", label: "Garantia de Qualidade" },
   { icon: Zap, value: "24h", label: "Resposta Rápida" },
 ];
@@ -258,7 +258,7 @@ export function HeroSection() {
                   <div className="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-2">
                     <Award className="w-6 h-6 text-primary-600" />
                   </div>
-                  <div className="text-2xl font-bold text-gray-900">15+</div>
+                  <div className="text-2xl font-bold text-gray-900">5+</div>
                   <div className="text-xs text-gray-600">Anos</div>
                 </div>
               </motion.div>

@@ -333,7 +333,7 @@ export function PortfolioSection() {
               { value: "500+", label: "Projetos Concluídos" },
               { value: "100%", label: "Taxa de Satisfação" },
               { value: "40%", label: "Melhoria Média na Eficiência" },
-              { value: "15+", label: "Anos de Experiência" },
+              { value: "5+", label: "Anos de Experiência" },
             ].map((stat, index) => (
               <motion.div
                 key={stat.label}

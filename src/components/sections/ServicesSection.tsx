@@ -112,7 +112,7 @@ const whyChooseUs = [
     icon: Target,
     title: "Especialização Técnica",
     description:
-      "15+ anos focados exclusivamente em limpeza industrial especializada",
+      "5+ anos focados exclusivamente em limpeza industrial especializada",
   },
   {
     icon: Sparkles,

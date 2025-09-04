@@ -71,7 +71,7 @@ const process = [
 
 const achievements = [
   {
-    value: "15+",
+    value: "5+",
     label: "Anos de Experiência",
     color: "from-blue-500 to-blue-600",
   },

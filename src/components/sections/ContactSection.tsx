@@ -73,7 +73,7 @@ const businessInfo = [
     title: "Responsável Técnico",
     details: [
       "Gustavo Costa - Fundador",
-      "15+ anos de experiência",
+      "5+ anos de experiência",
       "Especialista certificado",
     ],
   },
