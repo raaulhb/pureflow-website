@@ -23,10 +23,10 @@ function App() {
       <AboutSection />
 
       {/* Services Section */}
-      <ServicesSection />
+      {/* <ServicesSection /> */}
 
       {/* Portfolio Section */}
-      <PortfolioSection />
+      {/* <PortfolioSection /> */}
 
       {/* Quote Section */}
       <QuoteSection />

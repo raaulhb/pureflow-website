@@ -330,7 +330,7 @@ export function PortfolioSection() {
           </h3>
           <div className="grid md:grid-cols-4 gap-8">
             {[
-              { value: "500+", label: "Projetos Concluídos" },
+              { value: "200+", label: "Projetos Concluídos" },
               { value: "100%", label: "Taxa de Satisfação" },
               { value: "40%", label: "Melhoria Média na Eficiência" },
               { value: "5+", label: "Anos de Experiência" },

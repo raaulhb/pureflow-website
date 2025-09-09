@@ -16,6 +16,7 @@ import {
   CheckCircle,
   Star,
   ArrowRight,
+  ArrowDown,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -31,99 +32,48 @@ const faqs: FAQ[] = [
   {
     id: "1",
     category: "Serviços",
-    question: "Que tipos de equipamentos vocês limpam?",
+    question: "Que tipo de serviços a PURIFLOW realiza?",
     answer:
-      "Especializamo-nos na limpeza de exaustores industriais, filtros de alta performance e motores industriais. Atendemos desde pequenas empresas até grandes complexos industriais, incluindo cozinhas comerciais, fábricas, hospitais e indústrias químicas.",
+      "A PURIFLOW é especializada em limpeza profissional de exaustores, condutas, filtros, motores, desmontagem e montagem para limpeza geral de todas as peças e substituições se necessário. Garantimos eficiência, segurança e conformidade com as normas HACCP.",
     popular: true,
   },
   {
     id: "2",
-    category: "Preços",
-    question: "Quanto custa o serviço de limpeza?",
+    category: "Processo",
+    question:
+      "Com que frequência devo limpar os exaustores e condutas da minha cozinha?",
     answer:
-      "O preço varia conforme o tipo de equipamento, tamanho, complexidade e urgência do serviço. Oferecemos orçamentos gratuitos personalizados. Em média, nossos serviços variam entre €200-€2000 dependendo do projeto. Entre em contato para uma avaliação precisa.",
+      "A recomendação geral é realizar a limpeza a cada seis meses. Em alguns casos, consoante a intensidade de utilização, a periodicidade pode ser anual. A PURIFLOW avalia cada situação e propõe o plano de manutenção mais adequado.",
     popular: true,
   },
   {
     id: "3",
     category: "Garantia",
-    question: "Qual é a garantia dos serviços?",
+    question: "Recebo algum certificado após a limpeza?",
     answer:
-      "Oferecemos garantias diferenciadas: 6 meses para exaustores, 4 meses para filtros e 8 meses para motores industriais. Todos os serviços incluem certificado de qualidade e suporte pós-serviço. Se houver qualquer problema no período de garantia, retornamos sem custo adicional.",
+      "Sim. Após cada intervenção, a PURIFLOW emite um certificado oficial que comprova a execução do serviço e a conformidade com as normas de higiene e segurança alimentar.",
   },
   {
     id: "4",
-    category: "Serviços",
-    question: "Vocês atendem em todo Portugal?",
-    answer:
-      "Sim, atendemos em todo o território português. Temos base em várias regiões e nossa equipe móvel pode se deslocar para qualquer localização. Para projetos fora da região metropolitana, pode haver custo adicional de deslocamento, que será informado no orçamento.",
-  },
-  {
-    id: "5",
     category: "Processo",
     question: "Quanto tempo demora o serviço?",
     answer:
-      "O tempo varia conforme o tipo de equipamento: exaustores simples (4-8 horas), sistemas complexos (1-3 dias), filtros industriais (6-12 horas), motores (1-2 dias). Oferecemos serviços urgentes em 24h e emergenciais no mesmo dia com sobretaxa.",
+      "A maioria dos serviços demora entre 6 a 12 horas, dependendo da dimensão e complexidade do sistema. Trabalhamos de forma rápida e discreta, adaptando-nos ao cronograma de cada cliente.",
   },
   {
-    id: "6",
-    category: "Processo",
-    question: "É necessário parar a produção durante o serviço?",
-    answer:
-      "Na maioria dos casos, sim, para garantir segurança e qualidade. Planejamos o serviço conforme seu cronograma produtivo, oferecendo trabalho noturno, fins de semana ou períodos de menor atividade. Para sistemas críticos, avaliamos alternativas de limpeza parcial.",
-  },
-  {
-    id: "7",
+    id: "5",
     category: "Serviços",
-    question: "Vocês fornecem certificado após o serviço?",
+    question: "Em que horários a PURIFLOW pode realizar o serviço?",
     answer:
-      "Sim, todos os serviços incluem certificado técnico de qualidade com fotos antes/depois, relatório técnico detalhado, especificações dos produtos utilizados e assinatura do responsável técnico. Este documento é válido para auditorias e inspeções.",
-  },
-  {
-    id: "8",
-    category: "Preços",
-    question: "Existe desconto para contratos de manutenção?",
-    answer:
-      "Sim! Oferecemos até 25% de desconto para contratos anuais de manutenção preventiva. Incluimos 2-4 limpezas por ano (conforme necessidade), atendimento prioritário, garantia estendida e relatórios técnicos trimestrais. Ideal para grandes empresas.",
-  },
-  {
-    id: "9",
-    category: "Processo",
-    question: "Que produtos vocês utilizam na limpeza?",
-    answer:
-      "Utilizamos produtos biodegradáveis e aprovados para uso industrial, específicos para cada tipo de equipamento. Nossos desengordurantes e solventes são importados e atendem normas europeias de segurança. Fornecemos FISPQ de todos os produtos utilizados.",
-  },
-  {
-    id: "10",
-    category: "Urgência",
-    question: "Vocês atendem emergências?",
-    answer:
-      "Sim, temos serviço de emergência 24/7 para situações críticas como risco de incêndio, falhas de equipamentos ou auditorias urgentes. Atendimento em até 4 horas na região metropolitana e 24h nas demais regiões. Cobramos sobretaxa de 50% para emergências.",
-  },
-  {
-    id: "11",
-    category: "Garantia",
-    question:
-      "O que acontece se o equipamento apresentar problema após a limpeza?",
-    answer:
-      "Se houver qualquer problema relacionado ao nosso serviço durante o período de garantia, retornamos imediatamente sem custo. Temos seguro de responsabilidade civil e cobrimos eventuais danos causados por negligência. Mantemos registro técnico de todos os serviços.",
-  },
-  {
-    id: "12",
-    category: "Preços",
-    question: "Quais são as formas de pagamento?",
-    answer:
-      "Aceitamos dinheiro, transferência bancária, cartão de débito/crédito e boleto bancário. Para empresas, oferecemos pagamento em até 30 dias. Contratos anuais podem ser parcelados em até 12x. Não cobramos taxa adicional para pagamentos à vista.",
+      "Adaptamo-nos à realidade de cada cliente. Realizamos os serviços em horário noturno, fins de semana ou períodos de menor atividade, garantindo sempre segurança, qualidade e mínima interferência na operação da cozinha.",
   },
 ];
 
 const categories = [
   { id: "all", name: "Todas", icon: HelpCircle, color: "text-gray-600" },
   { id: "Serviços", name: "Serviços", icon: Wind, color: "text-blue-600" },
-  { id: "Preços", name: "Preços", icon: Euro, color: "text-green-600" },
-  { id: "Garantia", name: "Garantia", icon: Shield, color: "text-purple-600" },
   { id: "Processo", name: "Processo", icon: Cog, color: "text-orange-600" },
-  { id: "Urgência", name: "Urgência", icon: Clock, color: "text-red-600" },
+  { id: "Garantia", name: "Garantia", icon: Shield, color: "text-purple-600" },
 ];
 
 export function FAQSection() {
@@ -158,25 +108,25 @@ export function FAQSection() {
   return (
     <section
       id="duvidas"
-      className="py-20 lg:py-24 bg-gray-50 relative overflow-hidden"
+      className="relative py-20 overflow-hidden lg:py-24 bg-gray-50"
     >
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 -right-40 w-80 h-80 bg-primary-100 rounded-full opacity-20 blur-3xl"></div>
-        <div className="absolute bottom-1/4 -left-40 w-80 h-80 bg-secondary-100 rounded-full opacity-20 blur-3xl"></div>
+        <div className="absolute rounded-full top-1/4 -right-40 w-80 h-80 bg-primary-100 opacity-20 blur-3xl"></div>
+        <div className="absolute rounded-full bottom-1/4 -left-40 w-80 h-80 bg-secondary-100 opacity-20 blur-3xl"></div>
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="container relative z-10 px-4 mx-auto sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
-          className="text-center max-w-4xl mx-auto mb-16"
+          className="max-w-4xl mx-auto mb-16 text-center"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
           <motion.div
-            className="inline-flex items-center space-x-2 bg-primary-50 text-primary-700 px-4 py-2 rounded-full text-sm font-medium border border-primary-200 mb-6"
+            className="inline-flex items-center px-4 py-2 mb-6 space-x-2 text-sm font-medium border rounded-full bg-primary-50 text-primary-700 border-primary-200"
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
@@ -186,16 +136,15 @@ export function FAQSection() {
             <span>Dúvidas Frequentes</span>
           </motion.div>
 
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="mb-6 text-4xl font-bold text-gray-900 lg:text-5xl">
             Perguntas <span className="text-primary-600">Frequentes</span>
           </h2>
 
-          <p className="text-xl text-gray-600 leading-relaxed">
+          <p className="text-xl leading-relaxed text-gray-600">
             Encontre respostas para as principais dúvidas sobre nossos serviços,
             garantias, preços e processos de limpeza industrial.
           </p>
         </motion.div>
-
         {/* Search and Filters */}
         <motion.div
           className="max-w-4xl mx-auto mb-12"
@@ -206,13 +155,13 @@ export function FAQSection() {
         >
           {/* Search Bar */}
           <div className="relative mb-8">
-            <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
+            <Search className="absolute w-5 h-5 text-gray-400 transform -translate-y-1/2 left-4 top-1/2" />
             <input
               type="text"
               placeholder="Buscar por palavra-chave..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full pl-12 pr-4 py-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors text-lg"
+              className="w-full py-4 pl-12 pr-4 text-lg transition-colors border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
             />
           </div>
 
@@ -244,7 +193,6 @@ export function FAQSection() {
             ))}
           </div>
         </motion.div>
-
         {/* Popular Questions */}
         {searchTerm === "" && activeCategory === "all" && (
           <motion.div
@@ -254,139 +202,188 @@ export function FAQSection() {
             viewport={{ once: true }}
             transition={{ delay: 0.4 }}
           >
-            <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center space-x-2">
+            <h3 className="flex items-center mb-6 space-x-2 text-2xl font-bold text-gray-900">
               <Star className="w-6 h-6 text-yellow-500" />
               <span>Mais Perguntadas</span>
             </h3>
 
-            <div className="grid md:grid-cols-2 gap-4">
+            <div className="grid gap-4 md:grid-cols-2">
               {popularFAQs.map((faq) => (
                 <motion.button
                   key={faq.id}
                   onClick={() => toggleItem(faq.id)}
-                  className="bg-white rounded-xl p-6 border border-gray-200 hover:border-primary-300 hover:shadow-lg transition-all duration-300 text-left group"
+                  className="p-6 text-left transition-all duration-300 bg-white border border-gray-200 rounded-xl hover:border-primary-300 hover:shadow-lg group"
                   whileHover={{ y: -2 }}
                 >
                   <div className="flex items-start justify-between">
                     <div className="flex-1">
-                      <div className="flex items-center space-x-2 mb-2">
-                        <span className="text-xs font-semibold text-primary-600 bg-primary-50 px-2 py-1 rounded-full">
+                      <div className="flex items-center mb-2 space-x-2">
+                        <span className="px-2 py-1 text-xs font-semibold rounded-full text-primary-600 bg-primary-50">
                           {faq.category}
                         </span>
                         <Star className="w-4 h-4 text-yellow-500" />
                       </div>
-                      <h4 className="font-semibold text-gray-900 group-hover:text-primary-600 transition-colors">
+                      <h4 className="font-semibold text-gray-900 transition-colors group-hover:text-primary-600">
                         {faq.question}
                       </h4>
                     </div>
-                    <ChevronDown className="w-5 h-5 text-gray-400 group-hover:text-primary-500 transition-colors ml-4 flex-shrink-0" />
+                    <ChevronDown className="flex-shrink-0 w-5 h-5 ml-4 text-gray-400 transition-colors group-hover:text-primary-500" />
                   </div>
                 </motion.button>
               ))}
             </div>
           </motion.div>
         )}
-
-        {/* FAQ Items */}
+        {/* FAQ Container com altura limitada */}
         <motion.div
-          className="max-w-4xl mx-auto space-y-4"
+          className="max-w-4xl mx-auto"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.5 }}
         >
-          {filteredFAQs.map((faq, index) => (
-            <motion.div
-              key={faq.id}
-              className="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.05 }}
-            >
-              <motion.button
-                onClick={() => toggleItem(faq.id)}
-                className="w-full px-6 py-6 text-left hover:bg-gray-50 transition-colors"
-              >
-                <div className="flex items-center justify-between">
-                  <div className="flex-1">
-                    <div className="flex items-center space-x-3 mb-2">
-                      <span className="text-xs font-semibold text-primary-600 bg-primary-50 px-3 py-1 rounded-full">
-                        {faq.category}
-                      </span>
-                      {faq.popular && (
-                        <div className="flex items-center space-x-1">
-                          <Star className="w-4 h-4 text-yellow-500" />
-                          <span className="text-xs text-yellow-600 font-medium">
-                            Popular
-                          </span>
+          {/* Header do Container com contador */}
+          <div className="flex items-center justify-between px-6 py-4 bg-white border-b border-gray-200 rounded-t-xl">
+            <div className="flex items-center space-x-3">
+              <div className="w-2 h-2 rounded-full bg-primary-500"></div>
+              <h3 className="font-semibold text-gray-900">
+                Perguntas e Respostas
+              </h3>
+              <span className="px-2 py-1 text-sm font-medium text-gray-600 bg-gray-100 rounded-full">
+                {filteredFAQs.length}{" "}
+                {filteredFAQs.length === 1 ? "pergunta" : "perguntas"}
+              </span>
+            </div>
+
+            {/* Indicador de scroll */}
+            {filteredFAQs.length > 3 && (
+              <div className="flex items-center space-x-1 text-sm text-gray-500">
+                <ArrowDown className="w-4 h-4" />
+                <span>Role para ver mais</span>
+              </div>
+            )}
+          </div>
+
+          {/* Container scrollável das perguntas */}
+          <div className="overflow-hidden bg-white border border-t-0 border-gray-200 shadow-lg rounded-b-xl">
+            <div className="max-h-[600px] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
+              <div className="space-y-0">
+                {filteredFAQs.map((faq, index) => (
+                  <motion.div
+                    key={faq.id}
+                    className="border-b border-gray-100 last:border-b-0"
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: index * 0.05 }}
+                  >
+                    <motion.button
+                      onClick={() => toggleItem(faq.id)}
+                      className="w-full px-6 py-6 text-left transition-colors hover:bg-gray-50"
+                    >
+                      <div className="flex items-center justify-between">
+                        <div className="flex-1">
+                          <div className="flex items-center mb-2 space-x-3">
+                            <span className="px-3 py-1 text-xs font-semibold rounded-full text-primary-600 bg-primary-50">
+                              {faq.category}
+                            </span>
+                            {faq.popular && (
+                              <div className="flex items-center space-x-1">
+                                <Star className="w-4 h-4 text-yellow-500" />
+                                <span className="text-xs font-medium text-yellow-600">
+                                  Popular
+                                </span>
+                              </div>
+                            )}
+                          </div>
+                          <h3 className="pr-8 text-lg font-semibold text-gray-900">
+                            {faq.question}
+                          </h3>
                         </div>
+                        <motion.div
+                          animate={{
+                            rotate: openItems.includes(faq.id) ? 180 : 0,
+                          }}
+                          transition={{ duration: 0.3 }}
+                          className="flex-shrink-0"
+                        >
+                          <ChevronDown className="w-6 h-6 text-gray-400" />
+                        </motion.div>
+                      </div>
+                    </motion.button>
+
+                    <AnimatePresence>
+                      {openItems.includes(faq.id) && (
+                        <motion.div
+                          initial={{ height: 0, opacity: 0 }}
+                          animate={{ height: "auto", opacity: 1 }}
+                          exit={{ height: 0, opacity: 0 }}
+                          transition={{ duration: 0.3 }}
+                          className="overflow-hidden"
+                        >
+                          <div className="px-6 pb-6 border-t border-gray-100 bg-gray-50">
+                            <p className="pt-4 leading-relaxed text-gray-600">
+                              {faq.answer}
+                            </p>
+                          </div>
+                        </motion.div>
                       )}
-                    </div>
-                    <h3 className="text-lg font-semibold text-gray-900 pr-8">
-                      {faq.question}
-                    </h3>
-                  </div>
-                  <motion.div
-                    animate={{ rotate: openItems.includes(faq.id) ? 180 : 0 }}
-                    transition={{ duration: 0.3 }}
-                    className="flex-shrink-0"
-                  >
-                    <ChevronDown className="w-6 h-6 text-gray-400" />
+                    </AnimatePresence>
                   </motion.div>
-                </div>
-              </motion.button>
+                ))}
+              </div>
+            </div>
 
-              <AnimatePresence>
-                {openItems.includes(faq.id) && (
-                  <motion.div
-                    initial={{ height: 0, opacity: 0 }}
-                    animate={{ height: "auto", opacity: 1 }}
-                    exit={{ height: 0, opacity: 0 }}
-                    transition={{ duration: 0.3 }}
-                    className="overflow-hidden"
+            {/* Footer do container */}
+            <div className="px-6 py-3 border-t border-gray-200 bg-gray-50">
+              <div className="flex items-center justify-between text-sm text-gray-500">
+                <span>
+                  {openItems.length > 0
+                    ? `${openItems.length} resposta(s) expandida(s)`
+                    : "Clique nas perguntas para ver as respostas"}
+                </span>
+                {openItems.length > 0 && (
+                  <button
+                    onClick={() => setOpenItems([])}
+                    className="font-medium text-primary-600 hover:text-primary-700"
                   >
-                    <div className="px-6 pb-6 border-t border-gray-100">
-                      <p className="text-gray-600 leading-relaxed pt-4">
-                        {faq.answer}
-                      </p>
-                    </div>
-                  </motion.div>
+                    Fechar todas
+                  </button>
                 )}
-              </AnimatePresence>
-            </motion.div>
-          ))}
+              </div>
+            </div>
+          </div>
         </motion.div>
-
         {/* No Results */}
         {filteredFAQs.length === 0 && (
           <motion.div
-            className="text-center py-12"
+            className="max-w-4xl py-12 mx-auto text-center"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Search className="w-8 h-8 text-gray-400" />
+            <div className="p-12 bg-white shadow-lg rounded-xl">
+              <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 bg-gray-100 rounded-full">
+                <Search className="w-8 h-8 text-gray-400" />
+              </div>
+              <h3 className="mb-2 text-xl font-semibold text-gray-900">
+                Nenhuma pergunta encontrada
+              </h3>
+              <p className="mb-6 text-gray-600">
+                Não encontramos perguntas que correspondam à sua busca.
+              </p>
+              <button
+                onClick={() => {
+                  setSearchTerm("");
+                  setActiveCategory("all");
+                }}
+                className="font-medium text-primary-600 hover:text-primary-700"
+              >
+                Limpar filtros
+              </button>
             </div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">
-              Nenhuma pergunta encontrada
-            </h3>
-            <p className="text-gray-600 mb-6">
-              Não encontramos perguntas que correspondam à sua busca.
-            </p>
-            <button
-              onClick={() => {
-                setSearchTerm("");
-                setActiveCategory("all");
-              }}
-              className="text-primary-600 hover:text-primary-700 font-medium"
-            >
-              Limpar filtros
-            </button>
           </motion.div>
         )}
-
         {/* CTA Section */}
         <motion.div
           className="max-w-4xl mx-auto mt-16"
@@ -395,19 +392,19 @@ export function FAQSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <div className="bg-gradient-to-r from-primary-500 to-secondary-500 rounded-2xl p-8 lg:p-12 text-white text-center">
-            <h3 className="text-2xl lg:text-3xl font-bold mb-4">
+          <div className="p-8 text-center text-white bg-gradient-to-r from-primary-500 to-secondary-500 rounded-2xl lg:p-12">
+            <h3 className="mb-4 text-2xl font-bold lg:text-3xl">
               Não encontrou sua resposta?
             </h3>
-            <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+            <p className="max-w-2xl mx-auto mb-8 text-xl text-white/90">
               Nossa equipe está pronta para esclarecer qualquer dúvida
               específica sobre seu projeto ou necessidade.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col justify-center gap-4 sm:flex-row">
               <motion.button
                 onClick={handleScrollToContact}
-                className="bg-white hover:bg-gray-100 text-primary-600 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2"
+                className="flex items-center justify-center px-8 py-4 space-x-2 text-lg font-semibold transition-all duration-300 bg-white rounded-lg shadow-lg hover:bg-gray-100 text-primary-600 hover:shadow-xl"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -417,7 +414,7 @@ export function FAQSection() {
 
               <motion.a
                 href="tel:+351929021881"
-                className="bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 flex items-center justify-center space-x-2"
+                className="flex items-center justify-center px-8 py-4 space-x-2 text-lg font-semibold text-white transition-all duration-300 rounded-lg bg-white/20 hover:bg-white/30 backdrop-blur-sm"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >

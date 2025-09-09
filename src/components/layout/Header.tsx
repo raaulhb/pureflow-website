@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 
 const navigationItems = [
   { name: "EMPRESA", href: "#empresa" },
-  { name: "SERVIÇOS", href: "#servicos" },
+  // { name: "SERVIÇOS", href: "#servicos" },
   { name: "ORÇAMENTO", href: "#orcamento" },
   { name: "DÚVIDAS", href: "#duvidas" },
   { name: "CONTATOS", href: "#contatos" },
@@ -82,7 +82,7 @@ export function Header() {
         animate={{ y: 0 }}
         transition={{ type: "spring", stiffness: 300, damping: 30 }}
       >
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container px-4 mx-auto sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-20">
             {/* Logo */}
             <motion.div
@@ -93,7 +93,7 @@ export function Header() {
             </motion.div>
 
             {/* Navigation Desktop */}
-            <nav className="hidden lg:flex items-center space-x-8">
+            <nav className="items-center hidden space-x-8 lg:flex">
               {navigationItems.map((item, index) => (
                 <motion.button
                   key={item.name}
@@ -128,10 +128,10 @@ export function Header() {
             </nav>
 
             {/* Contact Info Desktop */}
-            <div className="hidden lg:flex items-center space-x-4">
+            <div className="items-center hidden space-x-4 lg:flex">
               <a
                 href="tel:+351929021881"
-                className="flex items-center space-x-2 text-sm text-gray-600 hover:text-primary-600 transition-colors"
+                className="flex items-center space-x-2 text-sm text-gray-600 transition-colors hover:text-primary-600"
               >
                 <Phone className="w-4 h-4" />
                 <span>+351 929 021 881</span>
@@ -141,7 +141,7 @@ export function Header() {
 
               <motion.button
                 onClick={() => handleNavClick("#orcamento")}
-                className="bg-primary-500 hover:bg-primary-600 text-white px-6 py-2 rounded-lg font-medium transition-colors duration-200 shadow-md hover:shadow-lg"
+                className="px-6 py-2 font-medium text-white transition-colors duration-200 rounded-lg shadow-md bg-primary-500 hover:bg-primary-600 hover:shadow-lg"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -151,7 +151,7 @@ export function Header() {
 
             {/* Mobile Menu Button */}
             <motion.button
-              className="lg:hidden p-2 rounded-md text-gray-700 hover:text-primary-600 hover:bg-gray-100 transition-colors"
+              className="p-2 text-gray-700 transition-colors rounded-md lg:hidden hover:text-primary-600 hover:bg-gray-100"
               onClick={() => setIsOpen(!isOpen)}
               whileTap={{ scale: 0.95 }}
             >
@@ -189,7 +189,7 @@ export function Header() {
           <>
             {/* Backdrop */}
             <motion.div
-              className="fixed inset-0 bg-black/20 backdrop-blur-sm z-40 lg:hidden"
+              className="fixed inset-0 z-40 bg-black/20 backdrop-blur-sm lg:hidden"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
@@ -198,13 +198,13 @@ export function Header() {
 
             {/* Mobile Menu */}
             <motion.div
-              className="fixed top-16 left-0 right-0 bg-white shadow-xl border-b z-40 lg:hidden"
+              className="fixed left-0 right-0 z-40 bg-white border-b shadow-xl top-16 lg:hidden"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ type: "spring", stiffness: 300, damping: 30 }}
             >
-              <div className="container mx-auto px-4 py-4">
+              <div className="container px-4 py-4 mx-auto">
                 <nav className="space-y-1">
                   {navigationItems.map((item, index) => (
                     <motion.button
@@ -227,10 +227,10 @@ export function Header() {
                 </nav>
 
                 {/* Mobile Contact */}
-                <div className="mt-6 pt-6 border-t border-gray-200 space-y-3">
+                <div className="pt-6 mt-6 space-y-3 border-t border-gray-200">
                   <a
                     href="tel:+351929021881"
-                    className="flex items-center space-x-3 p-3 rounded-lg text-gray-600 hover:bg-gray-50 transition-colors"
+                    className="flex items-center p-3 space-x-3 text-gray-600 transition-colors rounded-lg hover:bg-gray-50"
                   >
                     <Phone className="w-5 h-5 text-primary-500" />
                     <span className="font-medium">+351 929 021 881</span>
@@ -238,7 +238,7 @@ export function Header() {
 
                   <a
                     href="mailto:puriflowclean@gmail.com"
-                    className="flex items-center space-x-3 p-3 rounded-lg text-gray-600 hover:bg-gray-50 transition-colors"
+                    className="flex items-center p-3 space-x-3 text-gray-600 transition-colors rounded-lg hover:bg-gray-50"
                   >
                     <Mail className="w-5 h-5 text-primary-500" />
                     <span className="font-medium">puriflowclean@gmail.com</span>
@@ -246,7 +246,7 @@ export function Header() {
 
                   <motion.button
                     onClick={() => handleNavClick("#orcamento")}
-                    className="w-full bg-primary-500 hover:bg-primary-600 text-white px-6 py-3 rounded-lg font-medium transition-colors shadow-md"
+                    className="w-full px-6 py-3 font-medium text-white transition-colors rounded-lg shadow-md bg-primary-500 hover:bg-primary-600"
                     whileTap={{ scale: 0.98 }}
                   >
                     Orçamento Grátis

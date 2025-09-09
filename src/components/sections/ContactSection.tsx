@@ -16,7 +16,7 @@ import {
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-const contactMethods = [
+export const contactMethods = [
   {
     icon: Phone,
     title: "Telefone",
@@ -98,7 +98,7 @@ const guarantees = [
   {
     icon: CheckCircle,
     title: "Satisfação 100%",
-    description: "500+ clientes satisfeitos em 15 anos",
+    description: "200+ clientes satisfeitos em 5 anos",
   },
 ];
 
@@ -113,25 +113,25 @@ export function ContactSection() {
   return (
     <section
       id="contatos"
-      className="py-20 lg:py-24 bg-white relative overflow-hidden"
+      className="relative py-20 overflow-hidden bg-white lg:py-24"
     >
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 -left-32 w-64 h-64 bg-primary-100 rounded-full opacity-30 blur-3xl"></div>
-        <div className="absolute bottom-1/4 -right-32 w-64 h-64 bg-secondary-100 rounded-full opacity-30 blur-3xl"></div>
+        <div className="absolute w-64 h-64 rounded-full top-1/4 -left-32 bg-primary-100 opacity-30 blur-3xl"></div>
+        <div className="absolute w-64 h-64 rounded-full bottom-1/4 -right-32 bg-secondary-100 opacity-30 blur-3xl"></div>
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="container relative z-10 px-4 mx-auto sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
-          className="text-center max-w-4xl mx-auto mb-16"
+          className="max-w-4xl mx-auto mb-16 text-center"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
           <motion.div
-            className="inline-flex items-center space-x-2 bg-primary-50 text-primary-700 px-4 py-2 rounded-full text-sm font-medium border border-primary-200 mb-6"
+            className="inline-flex items-center px-4 py-2 mb-6 space-x-2 text-sm font-medium border rounded-full bg-primary-50 text-primary-700 border-primary-200"
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
@@ -141,11 +141,11 @@ export function ContactSection() {
             <span>Entre em Contato</span>
           </motion.div>
 
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="mb-6 text-4xl font-bold text-gray-900 lg:text-5xl">
             Vamos <span className="text-primary-600">Conversar</span>
           </h2>
 
-          <p className="text-xl text-gray-600 leading-relaxed">
+          <p className="text-xl leading-relaxed text-gray-600">
             Entre em contato conosco para discutir seu projeto. Estamos prontos
             para oferecer a melhor solução em limpeza industrial.
           </p>
@@ -153,7 +153,7 @@ export function ContactSection() {
 
         {/* Contact Methods */}
         <motion.div
-          className="grid md:grid-cols-3 gap-8 mb-16"
+          className="grid gap-8 mb-16 md:grid-cols-3"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -169,7 +169,7 @@ export function ContactSection() {
                   ? "noopener noreferrer"
                   : undefined
               }
-              className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100"
+              className="overflow-hidden transition-all duration-500 bg-white border border-gray-100 shadow-lg group rounded-2xl hover:shadow-2xl"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -200,16 +200,16 @@ export function ContactSection() {
 
               {/* Content */}
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors">
+                <h3 className="mb-2 text-xl font-bold text-gray-900 transition-colors group-hover:text-primary-600">
                   {method.title}
                 </h3>
-                <p className="text-primary-600 font-semibold mb-1">
+                <p className="mb-1 font-semibold text-primary-600">
                   {method.primary}
                 </p>
-                <p className="text-gray-500 text-sm mb-3">{method.secondary}</p>
-                <p className="text-gray-600 text-sm">{method.description}</p>
+                <p className="mb-3 text-sm text-gray-500">{method.secondary}</p>
+                <p className="text-sm text-gray-600">{method.description}</p>
 
-                <div className="mt-4 flex items-center text-primary-600 font-medium text-sm group-hover:translate-x-1 transition-transform">
+                <div className="flex items-center mt-4 text-sm font-medium transition-transform text-primary-600 group-hover:translate-x-1">
                   <span>Entrar em contato</span>
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </div>
@@ -220,7 +220,7 @@ export function ContactSection() {
 
         {/* Business Information */}
         <motion.div
-          className="grid lg:grid-cols-3 gap-8 mb-16"
+          className="grid gap-8 mb-16 lg:grid-cols-3"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -229,15 +229,15 @@ export function ContactSection() {
           {businessInfo.map((info, index) => (
             <motion.div
               key={info.title}
-              className="bg-gray-50 rounded-2xl p-6 border border-gray-200"
+              className="p-6 border border-gray-200 bg-gray-50 rounded-2xl"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.6 + index * 0.1 }}
               whileHover={{ scale: 1.02 }}
             >
-              <div className="flex items-center space-x-3 mb-4">
-                <div className="w-10 h-10 bg-primary-100 rounded-xl flex items-center justify-center">
+              <div className="flex items-center mb-4 space-x-3">
+                <div className="flex items-center justify-center w-10 h-10 bg-primary-100 rounded-xl">
                   <info.icon className="w-5 h-5 text-primary-600" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900">
@@ -249,9 +249,9 @@ export function ContactSection() {
                 {info.details.map((detail, idx) => (
                   <p
                     key={idx}
-                    className="text-gray-600 text-sm flex items-center space-x-2"
+                    className="flex items-center space-x-2 text-sm text-gray-600"
                   >
-                    <CheckCircle className="w-4 h-4 text-secondary-500 flex-shrink-0" />
+                    <CheckCircle className="flex-shrink-0 w-4 h-4 text-secondary-500" />
                     <span>{detail}</span>
                   </p>
                 ))}
@@ -262,25 +262,25 @@ export function ContactSection() {
 
         {/* Map Placeholder */}
         <motion.div
-          className="bg-gray-100 rounded-2xl p-8 lg:p-12 mb-16 text-center border border-gray-200"
+          className="p-8 mb-16 text-center bg-gray-100 border border-gray-200 rounded-2xl lg:p-12"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.7 }}
         >
           <div className="max-w-2xl mx-auto">
-            <div className="w-16 h-16 bg-primary-500 rounded-full flex items-center justify-center mx-auto mb-6">
+            <div className="flex items-center justify-center w-16 h-16 mx-auto mb-6 rounded-full bg-primary-500">
               <MapPin className="w-8 h-8 text-white" />
             </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+            <h3 className="mb-4 text-2xl font-bold text-gray-900">
               Atendemos Todo Portugal
             </h3>
-            <p className="text-lg text-gray-600 mb-6">
+            <p className="mb-6 text-lg text-gray-600">
               Nossa equipe móvel atende projetos em todo o território português.
               Conte conosco onde você estiver localizado.
             </p>
-            <div className="bg-white rounded-xl p-6 inline-block">
-              <p className="text-gray-700 font-medium">
+            <div className="inline-block p-6 bg-white rounded-xl">
+              <p className="font-medium text-gray-700">
                 🇵🇹 Portugal • 📍 Cobertura Nacional
               </p>
             </div>
@@ -288,79 +288,6 @@ export function ContactSection() {
         </motion.div>
 
         {/* Guarantees */}
-        <motion.div
-          className="bg-gradient-to-r from-primary-500 to-secondary-500 rounded-2xl p-8 lg:p-12"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.8 }}
-        >
-          <div className="text-center mb-12">
-            <h3 className="text-3xl lg:text-4xl font-bold text-white mb-4">
-              Por que Escolher a PURIFLOW?
-            </h3>
-            <p className="text-xl text-white/90 max-w-3xl mx-auto">
-              Compromisso com excelência, qualidade garantida e atendimento
-              personalizado
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-            {guarantees.map((guarantee, index) => (
-              <motion.div
-                key={guarantee.title}
-                className="text-center text-white"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.9 + index * 0.1 }}
-                whileHover={{ scale: 1.05 }}
-              >
-                <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <guarantee.icon className="w-8 h-8 text-white" />
-                </div>
-                <h4 className="text-lg font-bold mb-3">{guarantee.title}</h4>
-                <p className="text-white/80 leading-relaxed">
-                  {guarantee.description}
-                </p>
-              </motion.div>
-            ))}
-          </div>
-
-          {/* Final CTA */}
-          <motion.div
-            className="text-center"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: 1.2 }}
-          >
-            <p className="text-white/90 mb-8 text-lg">
-              Pronto para transformar a eficiência dos seus equipamentos?
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <motion.button
-                onClick={handleScrollToQuote}
-                className="bg-white hover:bg-gray-100 text-primary-600 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-              >
-                <Calendar className="w-5 h-5" />
-                <span>Solicitar Orçamento</span>
-              </motion.button>
-
-              <motion.a
-                href="tel:+351929021881"
-                className="bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 flex items-center justify-center space-x-2"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-              >
-                <Phone className="w-5 h-5" />
-                <span>+351 929 021 881</span>
-              </motion.a>
-            </div>
-          </motion.div>
-        </motion.div>
       </div>
     </section>
   );
