@@ -271,7 +271,7 @@ export function Footer() {
               <span>•</span>
               <span>Certificações ISO</span>
               <span>•</span>
-              <span>NIPC: [Número fictício]</span>
+              <span>NIPC: 297192850</span>
             </div>
           </motion.div>
         </div>
