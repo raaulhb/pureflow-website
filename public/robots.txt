@@ -1,19 +1,4 @@
 User-agent: *
 Allow: /
 
-# Bloquear arquivos desnecessários
-Disallow: /node_modules/
-Disallow: /src/
-Disallow: /*.json
-Disallow: /*.ts
-Disallow: /*.tsx
-
-# Sitemap
 Sitemap: https://puriflow.pt/sitemap.xml
-
-# Informações específicas para bots
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
