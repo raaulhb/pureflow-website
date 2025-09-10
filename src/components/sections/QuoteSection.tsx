@@ -140,13 +140,32 @@ export function QuoteSection() {
 
     setIsSubmitting(true);
 
-    // Simular envio do formulário
     try {
-      await new Promise((resolve) => setTimeout(resolve, 2000));
+      const res = await fetch("/api/send-quote", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          company: formData?.company,
+          location: formData?.location,
+          serviceType: formData.serviceType,
+          equipmentDetails: formData?.equipmentDetails,
+          urgency: formData?.urgency,
+          description: formData.description,
+        }),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) throw new Error(data.error || "Erro desconhecido");
+
+      console.log("Formulário enviado:", data.message);
       setIsSubmitted(true);
-      console.log("Formulário enviado:", formData);
-    } catch (error) {
-      console.error("Erro ao enviar:", error);
+    } catch (error: any) {
+      console.error("Erro ao enviar:", error.message);
+      alert("Ocorreu um erro ao enviar o orçamento. Tente novamente.");
     } finally {
       setIsSubmitting(false);
     }

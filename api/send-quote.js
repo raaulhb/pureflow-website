@@ -6,7 +6,17 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: "Método não permitido" });
   }
 
-  const { name, email, phone, serviceType, description } = req.body;
+  const {
+    name,
+    email,
+    phone,
+    company,
+    location,
+    serviceType,
+    equipmentDetails,
+    urgency,
+    description,
+  } = req.body;
 
   if (!name || !email || !phone || !serviceType || !description) {
     return res.status(400).json({ error: "Todos os campos são obrigatórios" });
@@ -31,7 +41,11 @@ export default async function handler(req, res) {
 Nome: ${name}
 Email: ${email}
 Telefone: ${phone}
+Empresa: ${company}
+Localizaçāo: ${location}
 Serviço: ${serviceType}
+equipamento Detalhes: ${equipmentDetails}
+Urgency: ${urgency}
 Descrição: ${description}
     `,
     replyTo: email, // importante: permite responder diretamente para o visitante
