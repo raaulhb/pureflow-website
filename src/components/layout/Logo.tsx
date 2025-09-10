@@ -4,9 +4,14 @@ import { cn } from "@/lib/utils";
 interface LogoProps {
   className?: string;
   size?: "sm" | "md" | "lg";
+  color?: "text-gray-900" | "text-white" | "text-primary-500";
 }
 
-export function Logo({ className, size = "md" }: LogoProps) {
+export function Logo({
+  className,
+  size = "md",
+  color = "text-gray-900",
+}: LogoProps) {
   const sizeClasses = {
     sm: "h-8 w-auto",
     md: "h-10 w-auto",
@@ -32,7 +37,8 @@ export function Logo({ className, size = "md" }: LogoProps) {
       <div className="flex flex-col">
         <motion.h1
           className={cn(
-            "font-bold text-gray-900 tracking-tight leading-none",
+            "font-bold tracking-tight leading-none",
+            color,
             size === "sm" && "text-lg",
             size === "md" && "text-xl",
             size === "lg" && "text-2xl"

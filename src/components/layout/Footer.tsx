@@ -85,6 +85,7 @@ export function Footer() {
               <div className="mb-6">
                 <Logo
                   size="lg"
+                  color="text-white"
                   className="mb-4"
                 />
                 <p className="leading-relaxed text-gray-400">
