@@ -9,7 +9,7 @@ Disallow: /*.ts
 Disallow: /*.tsx
 
 # Sitemap
-Sitemap: puriflow.pt/sitemap.xml
+Sitemap: https://puriflow.pt/sitemap.xml
 
 # Informações específicas para bots
 User-agent: Googlebot
