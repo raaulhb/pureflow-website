@@ -9,7 +9,7 @@ Disallow: /*.ts
 Disallow: /*.tsx
 
 # Sitemap
-Sitemap: https://puriflow-website.vercel.app/sitemap.xml
+Sitemap: puriflow.pt/sitemap.xml
 
 # Informações específicas para bots
 User-agent: Googlebot
