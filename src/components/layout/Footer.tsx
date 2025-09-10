@@ -15,7 +15,6 @@ import { Logo } from "./Logo";
 
 const navigationLinks = [
   { name: "Empresa", href: "#empresa" },
-  // { name: "Serviços", href: "#servicos" },
   { name: "Portfólio", href: "#portfolio" },
   { name: "Orçamento", href: "#orcamento" },
   { name: "Dúvidas", href: "#duvidas" },
@@ -63,7 +62,6 @@ export function Footer() {
 
   return (
     <footer className="relative overflow-hidden text-white bg-gray-900">
-      {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div
           className="absolute inset-0"
@@ -74,7 +72,6 @@ export function Footer() {
       </div>
 
       <div className="container relative z-10 px-4 mx-auto sm:px-6 lg:px-8">
-        {/* Main Footer Content */}
         <div className="py-16">
           <div className="grid gap-12 lg:grid-cols-4">
             {/* Company Info */}
@@ -91,26 +88,27 @@ export function Footer() {
                   className="mb-4"
                 />
                 <p className="leading-relaxed text-gray-400">
-                  Especialistas em limpeza industrial com mais de 5 anos de
-                  experiência. Transformamos a eficiência dos seus equipamentos.
+                  Mais de 5 anos de experiência. Transformamos a eficiência dos
+                  seus equipamentos.
                 </p>
               </div>
 
-              <div className="flex items-center mb-4 space-x-2 text-yellow-400">
+              {/* Ajuste do espaço entre estrelas e frase */}
+              <div className="flex items-center mb-6 space-x-2 text-yellow-400">
                 {[...Array(5)].map((_, i) => (
                   <Star
                     key={i}
                     className="w-5 h-5 fill-current"
                   />
                 ))}
-                <span className="ml-2 text-gray-300">
+                <span className="ml-3 text-gray-300">
                   200+ Clientes Satisfeitos
                 </span>
               </div>
 
               <div className="flex items-center space-x-2 text-green-400">
                 <Shield className="w-5 h-5" />
-                <span className="text-gray-300">Garantia até 8 meses</span>
+                <span className="text-gray-300">Garantia de Qualidade</span>
               </div>
             </motion.div>
 
@@ -229,10 +227,8 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Bottom Footer */}
         <div className="py-8 border-t border-gray-800">
           <div className="flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0">
-            {/* Copyright */}
             <motion.div
               className="flex items-center space-x-2 text-gray-400"
               initial={{ opacity: 0 }}
@@ -245,7 +241,6 @@ export function Footer() {
               <span>Feito com dedicação em Portugal</span>
             </motion.div>
 
-            {/* Back to Top */}
             <motion.button
               onClick={scrollToTop}
               className="flex items-center px-6 py-3 space-x-2 font-medium text-white transition-all duration-300 rounded-lg shadow-lg group bg-primary-500 hover:bg-primary-600 hover:shadow-xl"
@@ -261,7 +256,6 @@ export function Footer() {
             </motion.button>
           </div>
 
-          {/* Legal Links */}
           <motion.div
             className="pt-6 mt-6 text-center border-t border-gray-800"
             initial={{ opacity: 0 }}

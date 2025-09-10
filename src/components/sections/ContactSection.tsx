@@ -15,7 +15,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
-
+import { FaWhatsapp } from "react-icons/fa";
 export const contactMethods = [
   {
     icon: Phone,
@@ -38,7 +38,7 @@ export const contactMethods = [
     action: "mailto:puriflowclean@gmail.com",
   },
   {
-    icon: MessageSquare,
+    icon: FaWhatsapp,
     title: "WhatsApp",
     primary: "+351 929 021 881",
     secondary: "Chat direto",
