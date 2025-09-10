@@ -11,7 +11,7 @@ export function SEOHead({
   title = "PURIFLOW - Limpeza Industrial Especializada | Portugal",
   description = "Especialistas em limpeza de exaustores, filtros e motores industriais. 5+ anos de experiência, garantia até 8 meses. Atendimento em todo Portugal. Orçamento grátis!",
   keywords = "limpeza industrial, exaustores, filtros industriais, motores, limpeza Portugal, PURIFLOW, Gustavo Costa, manutenção industrial, limpeza especializada",
-  url = "https://puriflow-website.vercel.app/",
+  url = "puriflow.pt",
 }: SEOHeadProps) {
   useEffect(() => {
     // Update document title
@@ -66,7 +66,7 @@ export function SEOHead({
     updateMetaTag("twitter:description", description);
 
     // Business Info
-    updateMetaTag("contact", "puriflowclean@gmail.com");
+    updateMetaTag("contact", "geral@puriflow.pt");
     updateMetaTag("phone", "+351929021881");
 
     // Mobile
@@ -101,7 +101,7 @@ export function SEOHead({
         "Especialistas em limpeza industrial de exaustores, filtros e motores industriais",
       url: url,
       telephone: "+351929021881",
-      email: "puriflowclean@gmail.com",
+      email: "geral@puriflow.pt",
       address: {
         "@type": "PostalAddress",
         addressCountry: "PT",

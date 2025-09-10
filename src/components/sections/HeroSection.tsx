@@ -167,7 +167,7 @@ export function HeroSection() {
               animate={{ opacity: 1 }}
               transition={{ delay: 1, duration: 0.8 }}
             >
-              📧 puriflowclean@gmail.com • 🇵🇹 Portugal • ⚡ Resposta em 24h
+              📧 geral@puriflow.com • 🇵🇹 Portugal • ⚡ Resposta em 24h
             </motion.p>
           </motion.div>
 

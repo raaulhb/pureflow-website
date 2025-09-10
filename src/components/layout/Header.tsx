@@ -237,11 +237,11 @@ export function Header() {
                   </a>
 
                   <a
-                    href="mailto:puriflowclean@gmail.com"
+                    href="mailto:geral@puriflow.com"
                     className="flex items-center p-3 space-x-3 text-gray-600 transition-colors rounded-lg hover:bg-gray-50"
                   >
                     <Mail className="w-5 h-5 text-primary-500" />
-                    <span className="font-medium">puriflowclean@gmail.com</span>
+                    <span className="font-medium">geral@puriflow.com</span>
                   </a>
 
                   <motion.button
