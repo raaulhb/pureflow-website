@@ -37,8 +37,8 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "puriflowclean@gmail.com",
-    href: "mailto:puriflowclean@gmail.com",
+    value: "geral@puriflow.pt",
+    href: "mailto:geral@puriflow.pt",
   },
   {
     icon: MapPin,

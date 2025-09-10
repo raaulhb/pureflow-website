@@ -30,12 +30,12 @@ export const contactMethods = [
   {
     icon: Mail,
     title: "Email",
-    primary: "puriflowclean@gmail.com",
+    primary: "geral@puriflow.pt",
     secondary: "Resposta em 24h",
     description: "Envie detalhes do seu projeto por email",
     color: "from-green-500 to-green-600",
     bgColor: "bg-green-50",
-    action: "mailto:puriflowclean@gmail.com",
+    action: "mailto:geral@puriflow.pt",
   },
   {
     icon: FaWhatsapp,

@@ -158,18 +158,18 @@ export function QuoteSection() {
     return (
       <section
         id="orcamento"
-        className="py-20 lg:py-24 bg-gradient-to-br from-primary-50 to-secondary-50 relative overflow-hidden"
+        className="relative py-20 overflow-hidden lg:py-24 bg-gradient-to-br from-primary-50 to-secondary-50"
       >
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="container relative z-10 px-4 mx-auto sm:px-6 lg:px-8">
           <motion.div
             className="max-w-2xl mx-auto text-center"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-12 border border-gray-100">
+            <div className="p-8 bg-white border border-gray-100 shadow-xl rounded-2xl lg:p-12">
               <motion.div
-                className="w-20 h-20 bg-gradient-to-br from-secondary-500 to-secondary-600 rounded-full flex items-center justify-center mx-auto mb-6"
+                className="flex items-center justify-center w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-secondary-500 to-secondary-600"
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
                 transition={{ delay: 0.2, type: "spring" }}
@@ -177,22 +177,22 @@ export function QuoteSection() {
                 <CheckCircle className="w-10 h-10 text-white" />
               </motion.div>
 
-              <h3 className="text-3xl font-bold text-gray-900 mb-4">
+              <h3 className="mb-4 text-3xl font-bold text-gray-900">
                 Orçamento Enviado com Sucesso!
               </h3>
 
-              <p className="text-xl text-gray-600 mb-8">
+              <p className="mb-8 text-xl text-gray-600">
                 Recebemos sua solicitação e entraremos em contato em até 24
                 horas com uma proposta personalizada.
               </p>
 
-              <div className="bg-gray-50 rounded-xl p-6 mb-8">
-                <h4 className="font-semibold text-gray-900 mb-4">
+              <div className="p-6 mb-8 bg-gray-50 rounded-xl">
+                <h4 className="mb-4 font-semibold text-gray-900">
                   Próximos Passos:
                 </h4>
                 <div className="space-y-3 text-left">
                   <div className="flex items-center space-x-3">
-                    <div className="w-6 h-6 bg-primary-500 text-white rounded-full flex items-center justify-center text-sm font-bold">
+                    <div className="flex items-center justify-center w-6 h-6 text-sm font-bold text-white rounded-full bg-primary-500">
                       1
                     </div>
                     <span className="text-gray-700">
@@ -200,7 +200,7 @@ export function QuoteSection() {
                     </span>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <div className="w-6 h-6 bg-primary-500 text-white rounded-full flex items-center justify-center text-sm font-bold">
+                    <div className="flex items-center justify-center w-6 h-6 text-sm font-bold text-white rounded-full bg-primary-500">
                       2
                     </div>
                     <span className="text-gray-700">
@@ -208,7 +208,7 @@ export function QuoteSection() {
                     </span>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <div className="w-6 h-6 bg-primary-500 text-white rounded-full flex items-center justify-center text-sm font-bold">
+                    <div className="flex items-center justify-center w-6 h-6 text-sm font-bold text-white rounded-full bg-primary-500">
                       3
                     </div>
                     <span className="text-gray-700">
@@ -218,10 +218,10 @@ export function QuoteSection() {
                 </div>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col gap-4 sm:flex-row">
                 <a
                   href="tel:+351929021881"
-                  className="flex items-center justify-center space-x-2 bg-primary-500 hover:bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+                  className="flex items-center justify-center px-6 py-3 space-x-2 font-semibold text-white transition-colors rounded-lg bg-primary-500 hover:bg-primary-600"
                 >
                   <Phone className="w-4 h-4" />
                   <span>Ligar Agora</span>
@@ -241,7 +241,7 @@ export function QuoteSection() {
                       description: "",
                     });
                   }}
-                  className="flex items-center justify-center space-x-2 bg-white hover:bg-gray-50 text-gray-900 px-6 py-3 rounded-lg font-semibold transition-colors border border-gray-300"
+                  className="flex items-center justify-center px-6 py-3 space-x-2 font-semibold text-gray-900 transition-colors bg-white border border-gray-300 rounded-lg hover:bg-gray-50"
                 >
                   <span>Novo Orçamento</span>
                 </button>
@@ -256,25 +256,25 @@ export function QuoteSection() {
   return (
     <section
       id="orcamento"
-      className="py-20 lg:py-24 bg-gradient-to-br from-primary-50 to-secondary-50 relative overflow-hidden"
+      className="relative py-20 overflow-hidden lg:py-24 bg-gradient-to-br from-primary-50 to-secondary-50"
     >
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 -left-32 w-64 h-64 bg-primary-200 rounded-full opacity-30 blur-3xl"></div>
-        <div className="absolute bottom-1/4 -right-32 w-64 h-64 bg-secondary-200 rounded-full opacity-30 blur-3xl"></div>
+        <div className="absolute w-64 h-64 rounded-full top-1/4 -left-32 bg-primary-200 opacity-30 blur-3xl"></div>
+        <div className="absolute w-64 h-64 rounded-full bottom-1/4 -right-32 bg-secondary-200 opacity-30 blur-3xl"></div>
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="container relative z-10 px-4 mx-auto sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
-          className="text-center max-w-4xl mx-auto mb-16"
+          className="max-w-4xl mx-auto mb-16 text-center"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
           <motion.div
-            className="inline-flex items-center space-x-2 bg-white/80 backdrop-blur-sm text-primary-700 px-4 py-2 rounded-full text-sm font-medium border border-primary-200 mb-6"
+            className="inline-flex items-center px-4 py-2 mb-6 space-x-2 text-sm font-medium border rounded-full bg-white/80 backdrop-blur-sm text-primary-700 border-primary-200"
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
@@ -284,20 +284,20 @@ export function QuoteSection() {
             <span>Orçamento Gratuito</span>
           </motion.div>
 
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="mb-6 text-4xl font-bold text-gray-900 lg:text-5xl">
             Solicite seu <span className="text-primary-600">Orçamento</span>
           </h2>
 
-          <p className="text-xl text-gray-600 leading-relaxed">
+          <p className="text-xl leading-relaxed text-gray-600">
             Receba uma proposta personalizada para seus equipamentos
             industriais. Análise gratuita e resposta garantida em 24 horas.
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+        <div className="grid items-start gap-12 lg:grid-cols-2 lg:gap-16">
           {/* Form Side */}
           <motion.div
-            className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100"
+            className="p-8 bg-white border border-gray-100 shadow-xl rounded-2xl"
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -309,14 +309,14 @@ export function QuoteSection() {
             >
               {/* Personal Info */}
               <div className="space-y-4">
-                <h3 className="text-lg font-semibold text-gray-900 flex items-center space-x-2">
+                <h3 className="flex items-center space-x-2 text-lg font-semibold text-gray-900">
                   <User className="w-5 h-5 text-primary-500" />
                   <span>Informações de Contato</span>
                 </h3>
 
-                <div className="grid md:grid-cols-2 gap-4">
+                <div className="grid gap-4 md:grid-cols-2">
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block mb-2 text-sm font-medium text-gray-700">
                       Nome Completo *
                     </label>
                     <input
@@ -332,12 +332,12 @@ export function QuoteSection() {
                       placeholder="Seu nome completo"
                     />
                     {errors.name && (
-                      <p className="text-red-500 text-sm mt-1">{errors.name}</p>
+                      <p className="mt-1 text-sm text-red-500">{errors.name}</p>
                     )}
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block mb-2 text-sm font-medium text-gray-700">
                       Email *
                     </label>
                     <input
@@ -353,16 +353,16 @@ export function QuoteSection() {
                       placeholder="seu@email.com"
                     />
                     {errors.email && (
-                      <p className="text-red-500 text-sm mt-1">
+                      <p className="mt-1 text-sm text-red-500">
                         {errors.email}
                       </p>
                     )}
                   </div>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-4">
+                <div className="grid gap-4 md:grid-cols-2">
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block mb-2 text-sm font-medium text-gray-700">
                       Telefone *
                     </label>
                     <input
@@ -378,14 +378,14 @@ export function QuoteSection() {
                       placeholder="+351 XXX XXX XXX"
                     />
                     {errors.phone && (
-                      <p className="text-red-500 text-sm mt-1">
+                      <p className="mt-1 text-sm text-red-500">
                         {errors.phone}
                       </p>
                     )}
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block mb-2 text-sm font-medium text-gray-700">
                       Empresa
                     </label>
                     <input
@@ -394,14 +394,14 @@ export function QuoteSection() {
                       onChange={(e) =>
                         handleInputChange("company", e.target.value)
                       }
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"
+                      className="w-full px-4 py-3 transition-colors border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
                       placeholder="Nome da empresa"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block mb-2 text-sm font-medium text-gray-700">
                     Localização
                   </label>
                   <input
@@ -410,7 +410,7 @@ export function QuoteSection() {
                     onChange={(e) =>
                       handleInputChange("location", e.target.value)
                     }
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"
+                    className="w-full px-4 py-3 transition-colors border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
                     placeholder="Cidade, Portugal"
                   />
                 </div>
@@ -418,12 +418,12 @@ export function QuoteSection() {
 
               {/* Service Selection */}
               <div className="space-y-4">
-                <h3 className="text-lg font-semibold text-gray-900 flex items-center space-x-2">
+                <h3 className="flex items-center space-x-2 text-lg font-semibold text-gray-900">
                   <FileText className="w-5 h-5 text-primary-500" />
                   <span>Tipo de Serviço</span>
                 </h3>
 
-                <div className="grid md:grid-cols-2 gap-3">
+                <div className="grid gap-3 md:grid-cols-2">
                   {services.map((service) => (
                     <motion.button
                       key={service.id}
@@ -446,7 +446,7 @@ export function QuoteSection() {
                   ))}
                 </div>
                 {errors.serviceType && (
-                  <p className="text-red-500 text-sm">{errors.serviceType}</p>
+                  <p className="text-sm text-red-500">{errors.serviceType}</p>
                 )}
               </div>
 
@@ -458,7 +458,7 @@ export function QuoteSection() {
                   animate={{ opacity: 1, height: "auto" }}
                   transition={{ duration: 0.3 }}
                 >
-                  <h3 className="text-lg font-semibold text-gray-900 flex items-center space-x-2">
+                  <h3 className="flex items-center space-x-2 text-lg font-semibold text-gray-900">
                     {selectedService && (
                       <selectedService.icon className="w-5 h-5 text-primary-500" />
                     )}
@@ -466,7 +466,7 @@ export function QuoteSection() {
                   </h3>
 
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block mb-2 text-sm font-medium text-gray-700">
                       Informações Técnicas
                     </label>
                     <input
@@ -475,13 +475,13 @@ export function QuoteSection() {
                       onChange={(e) =>
                         handleInputChange("equipmentDetails", e.target.value)
                       }
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"
+                      className="w-full px-4 py-3 transition-colors border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
                       placeholder="Ex: Motor 500HP, Exaustor industrial 15m, etc."
                     />
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block mb-2 text-sm font-medium text-gray-700">
                       Urgência do Serviço
                     </label>
                     <div className="space-y-2">
@@ -512,7 +512,7 @@ export function QuoteSection() {
 
               {/* Description */}
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label className="block mb-2 text-sm font-medium text-gray-700">
                   Descrição do Problema/Necessidade *
                 </label>
                 <textarea
@@ -528,7 +528,7 @@ export function QuoteSection() {
                   placeholder="Descreva detalhes sobre o problema, quando foi a última manutenção, condições atuais, etc."
                 />
                 {errors.description && (
-                  <p className="text-red-500 text-sm mt-1">
+                  <p className="mt-1 text-sm text-red-500">
                     {errors.description}
                   </p>
                 )}
@@ -538,13 +538,13 @@ export function QuoteSection() {
               <motion.button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-primary-500 hover:bg-primary-600 disabled:bg-gray-400 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2"
+                className="flex items-center justify-center w-full px-8 py-4 space-x-2 text-lg font-semibold text-white transition-all duration-300 rounded-lg shadow-lg bg-primary-500 hover:bg-primary-600 disabled:bg-gray-400 hover:shadow-xl"
                 whileHover={{ scale: isSubmitting ? 1 : 1.02 }}
                 whileTap={{ scale: isSubmitting ? 1 : 0.98 }}
               >
                 {isSubmitting ? (
                   <>
-                    <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></div>
+                    <div className="w-5 h-5 border-b-2 border-white rounded-full animate-spin"></div>
                     <span>Enviando...</span>
                   </>
                 ) : (
@@ -555,7 +555,7 @@ export function QuoteSection() {
                 )}
               </motion.button>
 
-              <p className="text-sm text-gray-500 text-center">
+              <p className="text-sm text-center text-gray-500">
                 Ao enviar, você concorda em receber contato da PURIFLOW sobre
                 seu orçamento.
               </p>
@@ -571,8 +571,8 @@ export function QuoteSection() {
             transition={{ duration: 0.8 }}
           >
             {/* Benefits */}
-            <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">
+            <div className="p-8 bg-white border border-gray-100 shadow-xl rounded-2xl">
+              <h3 className="mb-6 text-2xl font-bold text-gray-900">
                 Por que solicitar seu orçamento?
               </h3>
 
@@ -586,11 +586,11 @@ export function QuoteSection() {
                     viewport={{ once: true }}
                     transition={{ delay: index * 0.1 }}
                   >
-                    <div className="w-12 h-12 bg-gradient-to-br from-primary-500 to-secondary-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 bg-gradient-to-br from-primary-500 to-secondary-500 rounded-xl">
                       <benefit.icon className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <h4 className="text-lg font-semibold text-gray-900 mb-2">
+                      <h4 className="mb-2 text-lg font-semibold text-gray-900">
                         {benefit.title}
                       </h4>
                       <p className="text-gray-600">{benefit.description}</p>
@@ -601,8 +601,8 @@ export function QuoteSection() {
             </div>
 
             {/* Contact Alternative */}
-            <div className="bg-gradient-to-r from-primary-500 to-secondary-500 rounded-2xl p-8 text-white">
-              <h3 className="text-xl font-bold mb-4">
+            <div className="p-8 text-white bg-gradient-to-r from-primary-500 to-secondary-500 rounded-2xl">
+              <h3 className="mb-4 text-xl font-bold">
                 Prefere falar diretamente?
               </h3>
               <p className="mb-6 text-white/90">
@@ -612,7 +612,7 @@ export function QuoteSection() {
               <div className="space-y-4">
                 <a
                   href="tel:+351929021881"
-                  className="flex items-center space-x-3 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-lg p-4 transition-colors"
+                  className="flex items-center p-4 space-x-3 transition-colors rounded-lg bg-white/20 hover:bg-white/30 backdrop-blur-sm"
                 >
                   <Phone className="w-5 h-5" />
                   <div>
@@ -621,25 +621,25 @@ export function QuoteSection() {
                   </div>
                 </a>
 
-                <a
+                {/* <a
                   href="mailto:puriflowclean@gmail.com"
-                  className="flex items-center space-x-3 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-lg p-4 transition-colors"
+                  className="flex items-center p-4 space-x-3 transition-colors rounded-lg bg-white/20 hover:bg-white/30 backdrop-blur-sm"
                 >
                   <Mail className="w-5 h-5" />
                   <div>
                     <div className="font-semibold">puriflowclean@gmail.com</div>
                     <div className="text-sm text-white/80">Enviar email</div>
                   </div>
-                </a>
+                </a> */}
               </div>
             </div>
 
             {/* Guarantee */}
-            <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100 text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-secondary-500 to-secondary-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="p-8 text-center bg-white border border-gray-100 shadow-xl rounded-2xl">
+              <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-secondary-500 to-secondary-600">
                 <Shield className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
+              <h3 className="mb-3 text-xl font-bold text-gray-900">
                 Garantia de Qualidade
               </h3>
               <p className="text-gray-600">
