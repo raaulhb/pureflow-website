@@ -271,6 +271,14 @@ export function Footer() {
               <span>•</span>
               <span>Certificações ISO</span>
               <span>•</span>
+              <a
+                target="_blank"
+                href="https://www.zaask.pt/user/gustavoicosta"
+                className="transition-opacity hover:opacity-80"
+              >
+                Perfil verificado Zaask
+              </a>
+              <span>•</span>
               <span>NIPC: 297192850</span>
             </div>
           </motion.div>
