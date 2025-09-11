@@ -11,7 +11,7 @@ export function SEOHead({
   title = "PURIFLOW - Limpeza Industrial Especializada | Portugal",
   description = "Especialistas em limpeza de exaustores, filtros e motores industriais. 5+ anos de experiência, garantia até 8 meses. Atendimento em todo Portugal. Orçamento grátis!",
   keywords = "limpeza industrial, exaustores, filtros industriais, motores, limpeza Portugal, PURIFLOW, Gustavo Costa, manutenção industrial, limpeza especializada",
-  url = "puriflow.pt",
+  url = "https://puriflow.pt",
 }: SEOHeadProps) {
   useEffect(() => {
     // Update document title
